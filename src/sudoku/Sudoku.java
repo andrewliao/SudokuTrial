@@ -45,6 +45,11 @@ public class Sudoku {
 		}		
 		
 		boolean found = fillNumber(unfilledElements, 0);
+		
+		// antoher step
+		
+		// erere
+		
 
 	}
 	
