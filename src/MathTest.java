@@ -2,6 +2,8 @@ import al.math.ALMath;
 import al.math.Circle;
 import al.math.Square;
 import al.math.TwoDShape;
+import al.math.Triangle;
+import al.math.Rectangle;
 
 public class MathTest {
 
@@ -31,6 +33,17 @@ public class MathTest {
 		System.out.println(area);
 		System.out.println(perimeter);
 
+		TwoDShape s4 = new Triangle(5.0, 3.0);
+		area = s4.area();
+		perimeter = s4.perimeter();
+		System.out.println(area);
+		System.out.println(perimeter);
+		
+		TwoDShape s5 = new Rectangle(5.0, 3.0);
+		area = s5.area();
+		perimeter = s5.perimeter();
+		System.out.println(area);
+		System.out.println(perimeter);
 		
 	}
 
