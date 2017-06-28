@@ -15,36 +15,30 @@ public class MathTest {
 		System.out.println("Squrare area for side 3 is " + area);
 		System.out.println("Square perimeter for side 3 is " + perimeter);
 		
-		TwoDShape s1 = new Square(4.0);
-		area = s1.area();
-		perimeter = s1.perimeter();
-		System.out.println(area);
-		System.out.println(perimeter);
+		Square s1 = new Square(4.0);
+		printInfo(s1);
 		
-		TwoDShape s2 = new Square(5.0);
-		area = s2.area();
-		perimeter = s2.perimeter();
-		System.out.println(area);
-		System.out.println(perimeter);
+		Square s2 = new Square(5.0);
+		printInfo(s2);
 		
-		TwoDShape s3 = new Circle(5.0);
-		area = s3.area();
-		perimeter = s3.perimeter();
-		System.out.println(area);
-		System.out.println(perimeter);
+		Circle s3 = new Circle(5.0);
+		printInfo(s3);
 
-		TwoDShape s4 = new Triangle(5.0, 3.0);
-		area = s4.area();
-		perimeter = s4.perimeter();
+		Triangle s4 = new Triangle(5.0, 3.0);
+		printInfo(s4);
+		
+		Rectangle s5 = new Rectangle(5.0, 3.0);
+		printInfo(s5);
+		
+		
+	}
+	
+	private static void printInfo(TwoDShape shape) {
+		double area = shape.area();
+		double perimeter = shape.perimeter();
 		System.out.println(area);
 		System.out.println(perimeter);
-		
-		TwoDShape s5 = new Rectangle(5.0, 3.0);
-		area = s5.area();
-		perimeter = s5.perimeter();
-		System.out.println(area);
-		System.out.println(perimeter);
-		
 	}
 
 }
+
